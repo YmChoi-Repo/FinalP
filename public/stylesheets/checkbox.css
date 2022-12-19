@@ -1,0 +1,31 @@
+.checkbox-group {
+    position: relative;
+}
+
+.checkbox-group .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.custom-checkbox ~ .custom-checkbox-span {
+    display: inline-block;
+    border: 2px solid #000;
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked ~ .custom-checkbox-span:after {
+    content: "\2713";
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    left: 5px;
+    top: -5px;
+    color: red;
+}

@@ -1,0 +1,9 @@
+localhost-key.pem
+localhost.pem
+package-lock.json
+package.json
+rootca.crt
+rootca.csr
+rootca.key
+node_modules
+bin
